@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/foundation/5.5.3/css/foundation.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/foundation/5.5.3/js/foundation.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/foundation/5.5.3/js/vendor/modernizr.js"></script>
+    <link rel="stylesheet" href="http://static.runoob.com/assets/foundation-icons/foundation-icons.css">
+</head>
+<body>
+<div style="padding:20px">
+    <h2>分割按钮</h2>
+<button class="button split">Split Button
+       <span data-dropdown="id01"></span>
+</button>
+
+<ul id="id01" data-dropdown-content class="f-dropdown">
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+</ul>
+<ul class="button-group even-3">
+    <li><button type="button" class="button">Apple</button></li>
+    <li><button type="button" class="button">Samsung</button></li>
+    <li><button type="button" class="button">Sony</button></li>
+    <li><button type="button" class="button">HTC</button></li>
+</ul>
+    <i class="fi-name"></i>
+</div>
+<div class="icon-bar five-up">
+    <a href="#" class="item disabled"><i class="fi-share"></i></a>
+    <a href="#" class="item disabled"><i class="fi-mail"></i></a>
+</div>
+<div class="padding:20px">
+    <h2>圆角标签</h2>
+    <span class="label">Default Label</span>
+    <span class="label radius">Radius Label</span>
+    <span class="label round">Round Label</span>
+    <span class="label success round">5</span>
+</div>
+<script>
+   $(document).ready(function(){
+       $(document).foundation();
+   })
+</script>
+</body>
+</html>

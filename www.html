@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>test</title>
+    <style>
+        .a{width:50px; height:50px; background:#000; position:absolute; left:0; top:0}
+        .obstacle{width:50px; height:50px; background:#f00; position:absolute; top:0}
+    </style>
+</head>
+<body>
+<div class="a"></div>
+<div class="obstacle" style="left:70px"></div>
+<div class="obstacle" style="left:150px"></div>
+<div class="obstacle" style="left:220px"></div>
+<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<script>
+    var obstacle = [];
+    var count = 0;
+    $('.obstacle').each(function(i,o) {
+        obstacle.push(o);
+    });
+    $('.a').animate({
+        left:300
+    }, {
+        duration: 500,
+        step: function() {
+            var that = this;
+            obstacle.forEach(function(o,i) {
+                if(parseInt(that.style.left) >= parseInt(o.style.left)) {
+                    console.log('经过障碍'+count++);
+                    obstacle.shift();
+                }
+            });
+        }
+    });
+
+</script>
+</body>
+</html>

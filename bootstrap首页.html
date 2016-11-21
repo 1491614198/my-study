@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     新 Bootstrap 核心 CSS 文件
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        *{
+           box-sizing:border-box;
+            list-style-type: none;
+        }
+        a{
+            text-decoration:none;
+        }
+        ul{
+            display:block;
+        }
+        h1,h2,h3,h4,h5,h6{
+            font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+        }
+        .top{
+            background:linear-gradient(45deg,rgb(2,0,49)0px ,rgb(109,51,83)100%);
+            text-align:center;
+            padding:90px 110px;
+            color:white;
+        }
+         .top h1{
+            font-size:100px;
+             font-weight:700;
+        }
+         .top h2{
+            font-size:30px;
+        }
+        .top p{
+            margin-top:30px;
+            font-size:40px;
+            font-weight:200;
+            line-height:1.25;
+        }
+        .top .btn-shadow{
+            padding:13px 35px 17px;
+            box-shadow:inset 0 -4px 0 #2a6496;
+            color:#fff;
+        }
+        .top .btn-primary{
+
+        }
+        .top a{
+            transition:all .2s ease-in-out initial;
+        }
+        .top_1{
+            padding:0;
+            margin-top:20px;
+
+        }
+        .top_1 a{
+            color:rgba(255,255,255,.5)
+        }
+        .second{
+            padding:15px 0;
+            text-align:center;
+            background-color:#f5f5f5;
+            border-top:1px solid #fff;
+            border-bottom:1px solid #ddd;
+        }
+        .second_1{
+            margin-left:0;
+            margin-bottom:0;
+            padding-left:0;
+            list-style:none;
+        }
+        .second_1 li{
+            display:inline-block;
+            line-height:1;
+            color:#555;
+        }
+        .second_1>li+li:before{
+            padding:0 10px;
+            color:#ccc;
+            content:"|";
+        }
+        .third{
+
+            text-align:center;
+            width:60%;
+            margin:auto;
+            margin-bottom:60px;
+        }
+
+        .third_1{
+            padding:5px 60px 20px;
+            margin:auto;
+            display:block;
+            -webkit-margin-before:1em;
+            -webkit-margin-after:1em;
+            -webkit-margin-start:0px;
+            -webkit-margin-end:0px;
+        }
+
+        .four_1{
+            padding:10px;
+            height:350px;
+            border:1px solid red;
+            margin-top:30px;
+        }
+        .most{
+            margin:auto;
+            margin-top:30px;
+        }
+        .five{
+            margin-top:30px;
+            border-top:1px solid grey;
+
+            padding-top:20px;
+        }
+        .five_1{
+
+        }
+        .five_2{
+            padding-left:0;
+        }
+        .five_2 a{
+            color:black;
+        }
+        .five_3{
+            margin-top:30px;
+            border-top:1px solid grey;
+            padding-bottom:30px;
+        }
+        .five_3 h5{
+            text-align:center;
+        }
+        @media(min-width:768px){
+            .navbar{
+                min-height:40px;
+            }
+            .third h1{
+                font-size:50px;
+            }
+        }
+        @media(max-width:1200px){
+            .nav li{
+                display:none;
+            }
+            .navbar{
+                height:50px;
+            }
+        }
+        @media(max-width:550px){
+            .top h1{
+                font-size:40px;
+            }
+            .top h2{
+                font-size:20px;
+            }
+            .third h1{
+                font-size:20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top" >
+        <div class="container" >
+            <ul class="nav navbar-nav " style="margin:auto;">
+                <li><a href="#">Bootstrap中文网</a></li>
+                <li><a href="#">Bootstrap中文文档</a></li>
+                <li><a href="#">Bootstrap3中文文档</a></li>
+                <li><a href="#">Bootstrap4.0 预览</a></li>
+                <li><a href="#">Less 教程</a></li>
+                <li><a href="#">jQuery API</a></li>
+                <li><a href="#">网站实例</a></li>
+                <li><a href="#">前端高薪职位</a></li>
+                <li>&nbsp;</li>
+                <li><a href="#">关于</a></li>
+            </ul>
+        </div>
+</div>
+<div class="container-fulid top">
+    <h1>Bootstrap</h1>
+    <h2>简介、直观、强悍的前端开发框架，让web开发更迅速、简单</h2>
+    <p>
+        <a href="#"  class="btn btn-lg btn-primary btn-shadow" role="button">Bootstrap3中文文档(v3.3.5)</a>
+    </p>
+    <ul class="top_1">
+        <li><a href="#" role="button">bootstrap2中文文档(v2.3.2)</a></li>
+    </ul>
+</div>
+<div class="second">
+    <div class="container-fulid">
+        <ul class="second_1">
+            <li><i class="fa fa-qq"></i>"Bootstrap技术交流群1"<span>242323123</span></li>
+            <li><i class="fa fa-qq"></i>"Bootstrap技术交流群2"<span>242323123</span></li>
+            <li><i class="fa fa-qq"></i>"Bootstrap技术交流群3"<span>242323123</span></li>
+        </ul>
+
+    </div>
+</div>
+<div class="container most">
+    <div class="third">
+        <h1>Bootstrap相关优质项目推荐</h1>
+        <p class="third_1 page-header">这些项目或者是对Bootstrap进行了有益的补充，或者是基于Bootstrap开发的</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3 col-sm-6 four_1"></div>
+        <div class="col-md-3 col-sm-6 four_1"></div>
+        <div class="col-md-3 col-sm-6 four_1"></div>
+        <div class="col-md-3 col-sm-6 four_1"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col-sm-6 four_1"></div>
+        <div class="col-md-3 col-sm-6 four_1"></div>
+        <div class="col-md-3 col-sm-6 four_1"></div>
+        <div class="col-md-3 col-sm-6 four_1"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col-sm-6 four_1"></div>
+        <div class="col-md-3 col-sm-6 four_1"></div>
+        <div class="col-md-3 col-sm-6 four_1"></div>
+        <div class="col-md-3 col-sm-6 four_1"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col-sm-6 four_1"></div>
+        <div class="col-md-3 col-sm-6 four_1"></div>
+        <div class="col-md-3 col-sm-6 four_1"></div>
+        <div class="col-md-3 col-sm-6 four_1"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col-sm-6 four_1"></div>
+        <div class="col-md-3 col-sm-6 four_1"></div>
+        <div class="col-md-3 col-sm-6 four_1"></div>
+        <div class="col-md-3 col-sm-6 four_1"></div>
+    </div>
+</div>
+
+<div class="five">
+<div class="container ">
+    <div class=" row">
+        <div class="col-md-6 five_1">
+            <h1>Bootstrap中文网</h1>
+            <h5>本网站所列开源项目中的中文版文档全部由Bootstrap中文网成员翻译整理，并全部遵循CC BY 3.0协议发布</h5>
+        </div>
+        <div class="col-md-offset-1 col-md-5 five_1">
+            <div class="row">
+                <div class="col-xs-3 five_1">
+                    <h4>关于</h4>
+                    <ul class="five_2">
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">广告合作</a></li>
+                        <li><a href="#">友情链接</a></li>
+                        <li><a href="#">招聘</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3 five_1">
+                    <h4>联系方式</h4>
+                    <ul class="five_2">
+                        <li><a href="#">新浪微博</a></li>
+                        <li><a href="#">电子邮件</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3 five_1">
+                    <h4>旗下网站</h4>
+                    <ul class="five_2">
+                        <li><a href="#">Laravel中文网</a></li>
+                        <li><a href="#">Ghost中国</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-3 five_1">
+                    <h4>赞助商</h4>
+                    <ul class="five_2">
+                        <li><a href="#">UCloud</a></li>
+                        <li><a href="#">又拍云</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <div class="five_3">
+        <h5>京ICP备11008151号 | 京公网安备11010802014853</h5>
+    </div>
+</div>
+
+<a href="#myModal" role="button" class="btn" data-toggle="modal">查看演示案例</a>
+
+<!-- Modal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div style="width:200px;height:300px;background:red;" class="modal-header">
+
+    </div>
+</div>
+<button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button>
+
+<div class="dropdown">
+    <a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+        Dropdown
+        <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+       <li><a href="#">我的</a></li>
+        <li><a href="#">你的</a></li>
+        <li><a href="#">他的</a></li>
+    </ul>
+</div>
+
+<ul class="nav nav-tabs" id="myTab">
+    <li class="active"><a href="#home">首页</a></li>
+    <li><a href="#profile">Profile</a></li>
+    <li><a href="#messages">Messages</a></li>
+    <li><a href="#settings">Settings</a></li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane active" id="home">首页</div>
+    <div class="tab-pane" id="profile">Profile</div>
+    <div class="tab-pane" id="messages">message</div>
+    <div class="tab-pane" id="settings">settings</div>
+</div>
+<script>
+    $(document).ready(function(){
+//        $('#myModal').modal('toogle');
+        $('#myModal').modal(options);
+        $('.dropdown-toggle').dropdown();
+        $(function () {
+            $('#myTab a:last').tab('show');
+        })
+    })
+</script>
+</body>
+</html>
